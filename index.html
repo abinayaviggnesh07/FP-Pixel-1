@@ -53,6 +53,12 @@ cbq('track', 'Purchase', {
   });
 }, false);
 
+    document.getElementById('unverifiedEvent_button').addEventListener('click', function() 
+ {cbq('track', 'unverifiedEvent', {
+     value: 100,
+     currency: 'USD',
+     ssn:'11223333'  }) 
+ }, false);
 
 document.getElementById('subcribeButton').addEventListener('click', function() {
   cbq('track', 'Subscribe');
