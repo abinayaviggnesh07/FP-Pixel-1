@@ -30,7 +30,7 @@
         <li><button id="purchaseButton" type="button">Purchase</button></li>
         <li><button id="subcribeButton" type="button">Subscribe</button></li>
         <li><button id="registrationButton" type="button">Registration</button></li>
-        <li><button id="unverifiedEvent_button" type="button">UnverifiedEvent</button></li>
+    
     </ul>
     </div>
 
@@ -62,12 +62,6 @@ document.getElementById('registrationButton').addEventListener('click', function
   cbq('track', 'CompleteRegistration');
 }, false);
 
-     document.getElementById('unverifiedEvent_button').addEventListener('click', function() 
- {cbq('track', 'unverifiedEvent', {
-     value: 100,
-     currency: 'USD',
-     ssn:'11223333'  }) 
- }, false);
 </script>
 </body>
 
