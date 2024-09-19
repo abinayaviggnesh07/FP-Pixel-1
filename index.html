@@ -12,8 +12,8 @@
       t.src=v;s=h.getElementsByTagName(e)[0];
       s.parentNode.insertBefore(t,s)}(window, document,'script',
       "https://sgen15lg916-2.sg-qa-site23.com/"+'sdk/capig-events.js');
-    cbq('init', "629368551700773713");
-    cbq('loadConfig', "629368551700773713");
+    cbq('init', "2726679815357682133");
+    cbq('loadConfig', "2726679815357682133");
     cbq('track', 'PageView');
     </script>
 <!-- End Meta Pixel Code -->
@@ -30,6 +30,7 @@
         <li><button id="purchaseButton" type="button">Purchase</button></li>
         <li><button id="subcribeButton" type="button">Subscribe</button></li>
         <li><button id="registrationButton" type="button">Registration</button></li>
+         <li><button id="unWantedEvent_button" type="button">unWantedEvent</button></li>
     
     </ul>
     </div>
@@ -60,6 +61,10 @@ document.getElementById('subcribeButton').addEventListener('click', function() {
 
 document.getElementById('registrationButton').addEventListener('click', function() {
   cbq('track', 'CompleteRegistration');
+}, false);
+
+    document.getElementById('unWantedEvent_button').addEventListener('click', function() {
+cbq('track', 'unWantedEvent');
 }, false);
 
 </script>
