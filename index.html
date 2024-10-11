@@ -14,7 +14,7 @@
     cbq('init', '5726092741604048787');
     cbq('loadConfig', '5726092741604048787');
     cbq('track', 'PageView');
-  </script> 
+  </script>
   <!-- End 1P Pixel Code -->
 <!-- End Meta Pixel Code -->
 <meta name="facebook-domain-verification" content="qowwrhpyni79cf2pms3zixyrxoh3b4" />
@@ -30,17 +30,17 @@
         <li><button id="purchaseButton" type="button">Purchase</button></li>
         <li><button id="subcribeButton" type="button">Subscribe</button></li>
         <li><button id="registrationButton" type="button">Registration</button></li>
-         <li><button id="unWantedEvent_button" type="button">unWantedEvent</button></li>
+        <li><button id="unverifiedEvent_button" type="button">unverifiedEvent</button></li>
     </ul>
     </div>
 
 <script type="text/javascript">
 document.getElementById('addToWishlistButton').addEventListener('click', function() {
-  cbq('track', 'Contact');
+  cbq('track', 'AddToWishlist');
 }, false);
 
 document.getElementById('addToCartButton').addEventListener('click', function() {
-  cbq('track', 'CustomEvents2');
+  cbq('track', 'CustomEvent2');
 }, false);
 
 document.getElementById('checkoutButton').addEventListener('click', function() {
@@ -48,7 +48,7 @@ document.getElementById('checkoutButton').addEventListener('click', function() {
 }, false);
 
 document.getElementById('purchaseButton').addEventListener('click', function() {
-cbq('track', 'Purchase', {
+ cbq('track', 'Purchase', {
     value: "fsdgdfg",
     currency: 'USD',
   });
@@ -61,11 +61,10 @@ document.getElementById('subcribeButton').addEventListener('click', function() {
 document.getElementById('registrationButton').addEventListener('click', function() {
   cbq('track', 'CompleteRegistration');
 }, false);
-
-    document.getElementById('unWantedEvent_button').addEventListener('click', function() {
-cbq('track', 'unWantedEvent');
-}, false);
-
+    document.getElementById('unverifiedEvent_button').addEventListener('click', function()
+{cbq('track', 'unverifiedEvent', {
+    value: 100,currency: 'USD',
+    ssn:'11223333'  }) }, 
+    false);
 </script>
 </body>
-
