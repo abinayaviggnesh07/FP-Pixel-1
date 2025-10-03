@@ -53,15 +53,15 @@ document.getElementById('addToWishlistButton').addEventListener('click', functio
 }, false);
 
 document.getElementById('addToCartButton').addEventListener('click', function() {
-  cbq('track', 'CustomEvent2');
+  fbq('track', 'CustomEvent2');
 }, false);
 
 document.getElementById('checkoutButton').addEventListener('click', function() {
-  cbq('track', 'InitiateCheckout');
+  fbq('track', 'InitiateCheckout');
 }, false);
 
 document.getElementById('purchaseButton').addEventListener('click', function() {
- cbq('track', 'Purchase', {
+ fbq('track', 'Purchase', {
 currency: 'USD',
 value: '123',
 num_items: '1',
@@ -70,14 +70,14 @@ num_items: '1',
 
 
 document.getElementById('subcribeButton').addEventListener('click', function() {
-  cbq('track', 'Subscribe');
+  fbq('track', 'Subscribe');
 }, false);
 
 document.getElementById('registrationButton').addEventListener('click', function() {
-  cbq('track', 'CompleteRegistration');
+  fbq('track', 'CompleteRegistration');
 }, false);
     document.getElementById('unverifiedEvent_button').addEventListener('click', function()
-{cbq('track', 'unverifiedEvent', {
+{fbq('track', 'unverifiedEvent', {
     value: 100,currency: 'USD',
     ssn:'11223333'  }) }, 
     false);
